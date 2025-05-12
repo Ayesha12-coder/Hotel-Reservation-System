@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Aurora Crest</a>
+        <ul class="menu">
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="FineDining.html">FineDining</a></li>
+            <li><a href="LuxuryRooms.html">Rooms</a></li>
+            <li><a href="Spa&Wellness.html">Spa & Wellness</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+    <center>
+        <hr>
+        <h1>Welcome to Our Hotel</h1>
+        <hr>
+    </center>
+    <div id="MainImage">
+        <img src="images/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg" alt="Main Image">
+    </div>
+    <marquee direction="left" behavior="Scroll" scrollamount="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: #2C3E50;"><p>Designed By: <strong>Arham Khan</strong>, <strong>Areeba Asif</strong>, <strong>Ayesha Iqbal</strong>, <strong>Saad Shaikh</strong>, <strong>Hina Ami  n</strong></p></marquee>
+    <center>
+        <div class="gallery">
+            <img src="images/pic1.jpg" alt="Picture 1" width="300px" height="300px">
+            <img src="images/pic2.jpg" alt="Picture 2" width="300px" height="300px">
+            <img src="images/pic3.jpg" alt="Picture 3" width="300px" height="300px">
+            
+        </div>
+    </center>
+    <div class="about">
+        <h2>About Us</h2>
+        <p>
+            Experience luxury and comfort at our hotel. With world-class amenities and exceptional service, 
+            we aim to make your stay unforgettable. Nestled in a serene location, our hotel offers the perfect 
+            blend of relaxation and adventure.
+        </p>
+    </div>
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <a href="LuxuryRooms.html"><h3>Rooms</h3></a>
+            <p>Spacious and elegantly designed rooms with all modern facilities.</p>
+        </div>
+        <div class="service-item">
+            <a href="FineDining.html"><h3>Fine Dining</h3></a>
+            <p>Delight your taste buds with exquisite cuisines prepared by top chefs.</p>
+        </div>
+        <div class="service-item">
+            <a href="Spa&Wellness.html"><h3>Spa & Wellness</h3></a>
+            <p>Rejuvenate your senses with our relaxing spa and wellness therapies.</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? We'd love to hear from you!</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

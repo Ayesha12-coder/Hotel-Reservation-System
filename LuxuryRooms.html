@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Rooms - Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Aurora Crest</a>
+        <ul class="menu">
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="FineDining.html">FineDining</a></li>
+            <li><a href="LuxuryRooms.html">Rooms</a></li>
+            <li><a href="Spa&Wellness.html">Spa & Wellness</a></li>        
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+    <center>
+        <hr>
+        <h1>Luxury Rooms at Our Hotel</h1>
+        <hr>
+    </center>
+    <div class="main-image">
+        <img src="images/luxury-room-main.jpg.jpg" alt="Luxury Room">
+    </div>
+    <div class="luxury-rooms">
+        <h2>Indulge in the Ultimate Comfort</h2>
+        <p>
+            Our luxury rooms are designed with elegance and comfort in mind. Each room is equipped with the finest amenities 
+            and offers breathtaking views, ensuring a relaxing and memorable stay. Whether for business or leisure, we provide 
+            the perfect space for rest and relaxation.
+        </p>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="images/room1.jpg" alt="Room 1">
+            <h3>Standard Room</h3>
+            <p>A cozy and comfortable room designed for relaxation, featuring modern amenities and a welcoming atmosphere to ensure a pleasant stay. Perfect for solo travelers or couples seeking a peaceful retreat.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/room2.png" alt="Room 2">
+            <h3>Double Room</h3>
+            <p>A spacious and well-appointed room designed for two guests, offering a comfortable bed, modern amenities, and a cozy ambiance, ideal for couples or friends looking to unwind in style.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/room3.jpg" alt="Room 3">
+            <h3>Delux Room</h3>
+            <p>An elegant and luxurious room featuring premium furnishings, expansive space, and high-end amenities, designed to offer the ultimate comfort and relaxation for guests seeking an indulgent stay.</p>
+        </div>
+    </div>
+    <br>
+    <div class="contact">
+        <h2>Contact Us for Bookings</h2>
+        <p>Want to book a room or need more information? Feel free to reach out!</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Hotel. All Rights Reserved.</p>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+</html>

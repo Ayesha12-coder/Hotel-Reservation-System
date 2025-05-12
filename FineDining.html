@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dining - Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Aurora Crest</a>
+        <ul class="menu">
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="FineDining.html">FineDining</a></li>
+            <li><a href="LuxuryRooms.html">Rooms</a></li>
+            <li><a href="Spa&Wellness.html">Spa & Wellness</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+    <center>
+        <hr>
+        <h1>Fine Dining at Our Hotel</h1>
+        <hr>
+    </center>
+    <div class="main-image">
+        <img src="images/FineDining.jpg" alt="Fine Dining">
+    </div>
+    <div class="fine-dining">
+        <h2>Experience the Best Culinary Delights</h2>
+        <p>
+            At our Fine Dining Restaurant, we offer a world-class dining experience with gourmet dishes 
+            crafted by expert chefs. Indulge in a variety of exquisite cuisines, perfect for any occasion, 
+            all prepared using the finest ingredients.
+        </p>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="images/Dish1.png" alt="Dish 1">
+            <h3>Crispy Burger</h3>
+            <p>A crispy, flavorful burger that delivers the perfect balance of textures and tastes, sure to satisfy your cravings.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/dish2.jpg" alt="Dish 2">
+            <h3>Chicken Broast</h3>
+            <p>An exquisite combination of ingredients that will leave you craving more.A crispy and tender chicken dish, seasoned to perfection, offering a deliciously satisfying crunch with every bite.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/dish3.jpg" alt="Dish 3">
+            <h3>Cheezy Loaded Fries</h3>
+            <p>Crispy golden fries smothered in creamy melted cheese, topped with savory seasonings for an irresistible, cheesy delight</p>
+            <br>
+        </div>
+    </div>
+    <br>
+    <div class="contact">
+        <h2>Contact Us for Reservations</h2>
+        <p>Have any questions or want to make a reservation? We'd love to assist you!</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Hotel. All Rights Reserved.</p>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+</html>

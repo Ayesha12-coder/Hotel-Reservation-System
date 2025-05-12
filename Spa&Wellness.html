@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa & Wellness - Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Aurora Crest</a>
+        <ul class="menu">
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="FineDining.html">FineDining</a></li>
+            <li><a href="LuxuryRooms.html">Rooms</a></li>
+            <li><a href="Spa&Wellness.html">Spa & Wellness</a></li>  
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+    <center>
+        <hr>
+        <h1>Spa & Wellness at Our Hotel</h1>
+        <hr>
+    </center>
+    <div class="main-image">
+        <img src="images/spa-main.webp" alt="Spa & Wellness">
+    </div>
+    <div class="spa-wellness">
+        <h2>Relax, Rejuvenate, Revitalize</h2>
+        <p>
+            Escape the stress of everyday life and immerse yourself in the tranquility of our world-class Spa & Wellness center.
+            Our treatments are designed to rejuvenate your body and mind, leaving you feeling refreshed and revitalized. 
+            Enjoy a range of luxurious therapies that cater to your every need.
+        </p>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="images/massage.avif" alt="Massage Therapy">
+            <h3>Massage Therapy</h3>
+            <p>Experience ultimate relaxation with our range of massage therapies designed to relieve stress and tension.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/facial.jpg" alt="Facial Treatments">
+            <h3>Facial Treatments</h3>
+            <p>Revitalize your skin with our luxury facial treatments tailored to your skin type and needs.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/sauna.webp" alt="Sauna & Steam Rooms">
+            <h3>Sauna & Steam Rooms</h3>
+            <p>Detoxify and rejuvenate your body with our soothing sauna and steam room experiences.</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>Contact Us for Spa Bookings</h2>
+        <p>Want to book a treatment or need more information? We're here to help!</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Hotel. All Rights Reserved.</p>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+</html>
